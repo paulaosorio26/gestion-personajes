@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "32fbcc34-a024-4086-8493-84283117661a",
+		"name": "Gestión de Personajes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43088729",
+		"_collection_link": "https://grey-space-786426.postman.co/workspace/Team-Workspace~1dbc0b40-566a-4628-806c-d38c48c8059d/collection/43088729-32fbcc34-a024-4086-8493-84283117661a?action=share&source=collection_link&creator=43088729"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener personaje por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Personaje",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nuevo Personaje\",\r\n    \"identificacion\": \"ID123\",\r\n    \"imagen\": \"imagen.jpg\",\r\n    \"rol\": \"Héroe\",\r\n    \"descripcion\": \"Descripción del personaje\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar personaje",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Personaje Actualizado\",\r\n    \"identificacion\": \"ID123\",\r\n    \"imagen\": \"nueva_imagen.jpg\",\r\n    \"rol\": \"Villano\",\r\n    \"descripcion\": \"Descripción actualizada\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un personaje",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

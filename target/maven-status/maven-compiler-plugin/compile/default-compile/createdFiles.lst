@@ -1,0 +1,7 @@
+com\example\gestion_personajes\CorsConfig.class
+com\example\gestion_personajes\controller\PersonajeController.class
+com\example\gestion_personajes\CorsConfig$1.class
+com\example\gestion_personajes\model\Personaje.class
+com\example\gestion_personajes\service\PersonajeService.class
+com\example\gestion_personajes\GestionPersonajesApplication.class
+com\example\gestion_personajes\repository\PersonajeRepository.class
